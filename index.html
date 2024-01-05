@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Age calculator app</title>
+  <!-- google fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- css styling sheet link -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="inputs">
+      <div class="days-input">
+        <span>DAY</span>
+        <input placeholder="DD" type="number" id="the-day">
+        <span class="Required">This field is required</span>
+        <span class="valed" id="invalid-day">Must be a valid day</span>
+      </div>
+      <div class="monthes-input">
+        <span>MONTH</span>
+        <input placeholder="MM" type="number" id="the-month">
+        <span class="Required">This field is required</span>
+        <span class="valed" id="invalid-month">Must be a valid month</span>
+      </div>
+      <div class="years-input">
+        <span>YEAR</span>
+        <input placeholder="YYYY" type="number" id="the-year">
+        <span class="Required">This field is required</span>
+        <span class="valed" id="invalid-year">Must be a valid year</span>
+      </div>
+      <button onclick="caclulate();" id="submit"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+    </div>
+    <div class="out-puts">
+      <h2><span id="years-out">--</span>years</h2>
+      <h2><span id="months-out">--</span>months</h2>
+      <h2><span id="days-out">--</span>days</h2>
+    </div>
+  </div>
+  <script src="./scrip.js"></script>
+</body>
+
+</html>
