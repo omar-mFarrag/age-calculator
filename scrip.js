@@ -109,7 +109,7 @@ function caclulate() {
             document.querySelectorAll('.inputs span:first-child')[0].style.color = 'var(--Light-red)';
         }
     }
-    if (dayInput == 29 && (yearInput / 4) % 1 != 0) {
+    if (dayInput == 29 && monthInput == 2 && (yearInput / 4) % 1 != 0) {
         valedDay = false;
         if (dayInput != "") {
             document.getElementById('invalid-day').style.opacity = '1';
@@ -150,11 +150,11 @@ function caclulate() {
         console.log(days)
         currentDay = date.getDate();
         // calculate months
-        if(monthInput > currentMonth){
+        if (monthInput > currentMonth) {
             currentMonth = currentMonth + 12;
             months = currentMonth - monthInput;
             currentYear -= 1;
-        }else{
+        } else {
             months = currentMonth - monthInput;
         }
         console.log(months)
